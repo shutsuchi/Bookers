@@ -20,9 +20,9 @@
 					<tr>
 						<td class="title-cell"><%= book.title %></td>
 						<td class="body-cell"><%= book.body %></td>
-						<td class="link-cell"><%= link_to "show", book_path(book) %></td>
-						<td class="link-cell"><%= link_to "edit", edit_book_path(book) %></td>
-						<td class="link-cell"><%= link_to "destroy", book_path(book), method: :delete %></td>
+						<td class="link-cell"><%= link_to "Show", book_path(book) %></td>
+						<td class="link-cell"><%= link_to "Edit", edit_book_path(book) %></td>
+						<td class="link-cell"><%= link_to "Destroy", book_path(book), method: :delete %></td>
 					</tr>
 					<% end %>
 				</tbody>
@@ -33,19 +33,8 @@
 
 	<div class="new">
 		<h3 class="new-title">New Book</h3>
+			<%= render "layouts/error_messages" %>
 
-		<%= render "layouts/error_messages" %>
-
-				<%= form_for(@book) do |b| %>
-					<p class="new-text">Title</p>
-					<%= b.text_field :title %>
-
-					<p class="new-text clearifx">Body</p>
-					<%= b.text_area :body %>
-
-					<p class="new-text"></p>
-					<%= b.submit 'Create Book' %>
-				<% end %>
 	</div>
 </div>
 

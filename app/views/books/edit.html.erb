@@ -5,19 +5,8 @@
 
 	<div class="edit">
 
-		<%= render "layouts/error_messages" %>
+		<%= render "layouts/error_update" %>
 
-		<%= form_for(@book) do |b| %>
-
-			<p class="new-text">Title</p>
-			<%= b.text_field :title %>
-
-			<p class="new-text clearifx">Body</p>
-			<%= b.text_area :body %>
-
-			<p class="new-text"></p>
-			<%= b.submit 'Update Book' %>
-		<% end %>
 	</div>
 
 	<div class="show-transition">
