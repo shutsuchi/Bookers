@@ -1,15 +1,140 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "arial", "serif";
+}
+clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.welcome{
+	margin: 30px auto 10px 30px;
+}
+.top{
+	margin-left: 60px;
+	line-height: 3;
+}
+.description{
+	font-size: 15px;
+}
+
+/*-------- Coomon --------*/
+.page{
+	margin: 35px;
+}
+.headline{
+	margin-bottom: 10px;
+}
+
+/*-------- IndexPage --------*/
+.table-box{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.title-box{
+	width: 90%;
+}
+.table-title1{
+	float: left;
+	/*margin-left: 60px;*/
+	width: 30%;
+	text-align: center;
+}
+.table-title2{
+	/*margin-left: 250px;*/
+	width: 70%;
+	text-align: center;
+}
+table{
+	width: 90%;
+	font-size: 13px;
+	line-height: 1.5;
+}
+.title-cell{
+	width: 30%;
+}
+.body-cell{
+	width: 50%;
+}
+.link-cell{
+	width: 15px;
+	padding-right: 5px;
+}
+
+
+.new-title, .new-text{
+	margin-top: 10px;
+}
+.new-text{
+	font-size: 15px;
+}
+
+/*-------- ShowPage --------*/
+.show{
+	font-size: 15px
+}
+.show-text{
+	margin: 35px 30px;
+}
+.show-block{
+	float: left;
+	margin-right: 5px;
+}
+.show-transition{
+	margin-top: 15px;
+	font-size: 15px;
+}
+.trans-box{
+	margin-right: 5px;
+}
+
+/*-------- ErrorHandling --------*/
+.error-box{
+	border: 2px solid #ff0000;
+	width: 450px;
+}
+.error-title{
+ 	color: #fff;
+ 	background-color: #cc0000;
+ 	padding: 5px 0 5px 5px;
+}
+
+.error-box-text{
+	font-size: 13px;
+	background-color: #eeeeee;
+	padding; 30px 30px 30px 50px;
+}
+.error-text{
+	line-height: 1.5;
+	margin-left: 80px;
+}
+.error-text:first-child{
+	padding-top: 30px;
+}
+.error-text:last-child{
+	padding-bottom: 30px;
+}
+
+li{
+	list-style-type: square;
+}
+
+.error-title-text{
+	background-color: #ff0000;
+	width: 35px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+.error-format{
+	display: table;
+	padding: 2px;
+	background-color: #ff0000;
+}
+
+/*-------- SuccessMessage --------*/
+.notice-success{
+	margin-bottom: 10px;
+	color: green;
+}

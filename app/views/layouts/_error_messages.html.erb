@@ -1,0 +1,27 @@
+<%= form_for(@book) do |b| %>
+
+<% if @book.errors.any? %>
+	<div class="error-box">
+		<h5 class="error-title"><%= @book.errors.count %> error prohibited this book from being saved:</h5>
+		<div class="error-box-text">
+			<ul>
+				<% @book.errors.full_messages.each do |message| %>
+				<li class="error-text"><%= message %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+
+	<p class="error-title-text">Title</p>
+		<div class="error-format">
+	 		<%= b.text_field :title %>
+		</div>
+
+	<p class="error-title-text clearifx">Body</p>
+		<div class="error-format">
+			<%= b.text_area :body %>
+		</div>
+
+<% end %>
+
+<% end %>
